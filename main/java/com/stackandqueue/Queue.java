@@ -10,6 +10,12 @@ public class Queue<T> {
         myLinkedList.append(data);
     }
 
+    public T dequeue() {
+        T top = myLinkedList.head.getData();
+        myLinkedList.pop();
+        return top;
+    }
+
     public void print() {
         myLinkedList.display();
     }

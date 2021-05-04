@@ -13,4 +13,14 @@ public class QueueTesting {
         queue.enqueue(b);
         queue.enqueue(c);
     }
+
+    @Test
+    public void given_elements_popped_Return_FrontNode() {
+        Queue<Integer> queue = new Queue<Integer>();
+        Integer a = 70, b = 30, c = 56;
+        queue.enqueue(a);
+        queue.enqueue(b);
+        queue.enqueue(c);
+        Assert.assertEquals(a, queue.dequeue());
+    }
 }
