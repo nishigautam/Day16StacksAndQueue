@@ -19,6 +19,12 @@ public class Stack<T> {
         return myLinkedList.head.getData();
     }
 
+    public T pop() {
+        T top = myLinkedList.head.getData();
+        myLinkedList.pop();
+        return top;
+    }
+
     public boolean isEmpty() {
         if(myLinkedList.head == null) {
             return true;

@@ -72,7 +72,7 @@ public class LinkedList<T> {
     /**
      * uc5 : ability to delete the first element
      */
-    public void pop_first_element() {
+    public void pop() {
         Node<T> node = head;
         head = node.getNext();
         node.setNext(null);
